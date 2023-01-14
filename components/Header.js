@@ -26,7 +26,7 @@ export default function Header () {
                     <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
                         <Link href="/" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Home </Link>
 
-                        <Link href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> About </Link>
+                        <Link href="/about" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> About </Link>
 
                         <Link href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Blog </Link>
 

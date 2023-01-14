@@ -8,12 +8,11 @@
 
 @font-face
 {
- 
   font-family: "IcoFont";
-font-weight: normal;
-font-style: "Regular";
-src: url("/public/") format("woff2"),
-url("../public/fonts/icofont.woff") format("woff");
+  font-weight: normal;
+  font-style: "Regular";
+  src: url("../public/fonts/icofont.woff2") format("woff2"),
+  url("../public/fonts/icofont.woff") format("woff");
 }
 
 [class^="icofont-"], [class*=" icofont-"]
@@ -56,6 +55,26 @@ url("../public/fonts/icofont.woff") format("woff");
 .icofont-chart-bar-graph:before
 {
   content: "\e979";
+}
+
+.icofont-check-circled:before
+{
+  content: "\eed7";
+}
+
+.icofont-checked:before
+{
+  content: "\eed9";
+}
+
+.icofont-heartbeat:before
+{
+  content: "\ec20";
+}
+
+.icofont-unique-idea:before
+{
+  content: "\f019";
 }
 
 .icofont-xs

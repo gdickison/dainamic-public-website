@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Compliance",
+    "icon": "check-circled",
+    "text": "Ever increasing financial regulations, complex data, and macroeconomic volatility require financial institutions to be more savvier than ever."
+  },
+  {
+    "id": 2,
+    "title": "Risk Mangement",
+    "icon": "heartbeat",
+    "text": "Small and midsize banks are experiencing heightened levels of risk because they must maintain reserve requirements that are not tailored to their individual balance sheets, thereby causing them to miss out on lending opportunities. "
+  },
+  {
+    "id": 3,
+    "title": "Knowledge",
+    "icon": "unique-idea",
+    "text": "A majority of investors and banks have little data infrastructure and technical experience to produce reliable forecasts or synthesize the broader array of economic information in their market."
+  }
+]
