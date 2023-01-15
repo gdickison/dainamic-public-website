@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. Christos Makridis",
+        "role": "Founder / CEO",
+        "image": "christos.jpg",
+        "website": "https://www.christosmakridis.com/",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/christosmakridis/"
+            }
+        ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 2,
+        "name": "John Nguyen",
+        "role": "CTO",
+        "image": "john.jpg",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/john-0235a012/"
+            }
+        ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 3,
+        "name": "Justin Whear",
+        "role": "VP Engineering",
+        "image": "justinwhear.jpg",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/justin-whear/"
+            }
+        ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 4,
+        "name": "Rob Sentz",
+        "role": "Marketing",
+        "image": "robsentz.jpg",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/robsentz/"
+            }
+        ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 5,
+        "name": "Greg Dickison",
+        "role": "Senior Software Developer",
+        "image": "gregdickison.jpeg",
+        "website": "https://bluecanoe.dev/",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/greg-dickison/"
+            }
+        ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 6,
+        "name": "Mark Calabria",
+        "role": "Senior Adviser",
+        "image": "mark.png",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/mark-calabria-94620b2/"
+            }
+          ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 7,
+        "name": "Paul Watkins",
+        "role": "Senior Adviser",
+        "image": "paul.png",
+        "social": [
+            {
+                "id": 3,
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/paul-watkins-46695b6/"
+            }
+          ],
+        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+]
