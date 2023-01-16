@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. Christos Makridis",
+        "role": "Founder / CEO",
+        "image": "christos.jpg",
+        "website": "https://www.christosmakridis.com/",
+        "social": "https://www.linkedin.com/in/christosmakridis/",
+        "text": "Christos A. Makridis also holds academic appointments at the Digital Economy Lab at Stanford University, the Chazen Institute at Columbia Business School, Institute for the Future at University of Nicosia, the Global Security Initiative and W. P. Carey School of Business at Arizona State University, Institute for Studies of Religion, as well serving as an adjunct fellow at the Manhattan Institute and senior adviser at Gallup. Christos previously served on the White House Council of Economic Advisers managing the cybersecurity, technology, and space activities, as a Non-resident Fellow at the Cyber Security Project in the Harvard Kennedy School of Government, as a Digital Fellow at the Initiative at the Digital Economy in the MIT Sloan School of Management. Christos' primary academic research focuses on labor economics, the digital economy, and personal finance and well-being, and has published over 70 peer-reviewed research articles and 170 news articles. He serves on the board of advisers for Meta Impact Capital and Zenger News. Christos earned dual Masters and PhDs in Economics and Management Science & Engineering at Stanford University."
+    },
+    {
+        "id": 6,
+        "name": "Mark Calabria",
+        "role": "Strategic Adviser",
+        "image": "mark.png",
+        "social": "https://www.linkedin.com/in/mark-calabria-94620b2/",
+        "text": "Mark Calabria is a senior adviser at the Cato Institute. He formerly served as the Director of the Federal Housing Finance Agency and as the Chief Economist for Vice President Mike Pence. Previously, Mark served as a senior aide to the U.S. Senate Committee on Banking, Housing, and Urban Affairs under chairs Richard Shelby and Phil Gramm. During his Senate service, he acted as the primary drafter of the Housing and Economic Recovery Act of 2008, which established a stronger regulatory framework for the government‐​sponsored housing enterprises. He also led the banking committee's response to Hurricane Katrina, as well as its work on the Shelby‐​Dodd Flood Insurance Reform and Modernization Act of 2008, which served as the basis for the Biggert‐​Waters Flood Insurance Reform Act of 2012. Prior to his Senate service, Calabria served as the deputy assistant secretary for regulatory affairs in the Office of Housing at the U.S. Department of Housing and Urban Development. Calabria has also held positions with Harvard University's Joint Center for Housing Studies, the National Association of Realtors, and the National Association of Home Builders. He holds a doctorate in economics from George Mason University."
+    },
+    {
+        "id": 7,
+        "name": "Paul Watkins",
+        "role": "Strategic Adviser",
+        "image": "paul.png",
+        "social": "https://www.linkedin.com/in/paul-watkins-46695b6/",
+        "text": "Paul Watkins leads the Fusion Law Firm. He formerly served as a Senior Adviser at Patomak Global Partners and the Chief Innovation Officer at the Consumer Financial Protection Bureau (CFP). He designed the Bureau's policies on no-action letters, trial disclosures, and compliance sandbox tests. He signed Bureau letters issued under those policies on topics ranging from mortgages to small-dollar loans, and co-authored Bureau statements on alternative data, and artificial intelligence. Paul previously led the Civil Litigation Division of the Arizona Attorney General's Office where he managed the state's enforcement of consumer protection, data privacy, antitrust, and civil rights laws, and he designed legislation establishing Arizona's Fintech Sandbox, which became the model for other state-based fintech sandboxes, and drafted one of the first U.S. laws defining utility tokens. Paul earned his undergraduate degree from Hillsdale College and his J.D. from Harvard Law School."
+    }
+]
