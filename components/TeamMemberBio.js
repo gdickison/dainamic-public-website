@@ -15,7 +15,7 @@ export default function TeamMemberBio ({name, role, image, text, social, handleC
                   {name}
                 </h3>
                 <span>
-                  <a className="text-gray-500" href={social}>
+                  <a className="text-gray-500" href={social} target="_blank" rel="noreferrer">
                     <img className="h-8 w-8" src="/images/linkedin.png" alt="linked in icon" />
                   </a>
                 </span>
