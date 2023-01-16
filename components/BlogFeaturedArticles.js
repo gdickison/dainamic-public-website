@@ -9,7 +9,7 @@ export default function BlogFeaturedArticles ({numArticles}) {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-semibold leading-tight text-gray-800 sm:text-3xl lg:text-4xl">{`Featured Blog ${numArticles === 1 ? 'Post' : 'Posts'}`}</h2>
         </div>
-        <div className={`grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:${numArticles < 3 ? `grid-cols-${numArticles}` : 'grid-cols-3'} lg:max-w-full lg:gap-14`}>
+        <div className={`grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 ${numArticles < 3 ? `lg:grid-cols-${numArticles}` : 'lg:grid-cols-3'} lg:max-w-full lg:gap-14`}>
           {displayArticles &&
             displayArticles.map(post => (
               <BlogFeatureCard
