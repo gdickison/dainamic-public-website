@@ -24,7 +24,9 @@ export default function Home() {
           text1={"Dainamic is led by a small team of economists and data scientists that can help you create and explain forecasts over asset portfolios for CECL."}
           text2={"Dainamic helps banks comply with the current and expected credit loss (CECL) regulation by creating “reasonable and supportable” scenarios through advanced AI technology applied on a wide array of data, comparable to those that large banks have available in-house, at a fraction of the cost. Dainamic’s unique approach draws on extensive academic research."}
         />
-        <BlogFeaturedArticles/>
+        <BlogFeaturedArticles
+          numArticles={1}
+        />
       </main>
     </>
   )
