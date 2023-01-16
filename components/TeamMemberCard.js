@@ -2,7 +2,7 @@
 import { useState } from "react"
 import TeamMemberBio from "./TeamMemberBio"
 
-export default function TeamMemberCard ({id, name, role, image, website, social, text}) {
+export default function TeamMemberCard ({name, role, image, website, social, text}) {
   const [showBio, setShowBio] = useState(false)
 
   function handleClick () {
@@ -29,11 +29,6 @@ export default function TeamMemberCard ({id, name, role, image, website, social,
             }
           </h2>
           <h3 className="text-gray-500 mb-3">{role}</h3>
-          <span className="inline-flex">
-            <a className="text-gray-500" href={social[0].link}>
-              <img className="h-6 w-6" src="/images/linkedin.png" alt="linked in icon" />
-            </a>
-          </span>
         </div>
       </div>
       {showBio &&
@@ -43,6 +38,7 @@ export default function TeamMemberCard ({id, name, role, image, website, social,
           image={image}
           text={text}
           handleClick={handleClick}
+          social={social}
         />
       }
     </div>

@@ -5,56 +5,32 @@
         "role": "Founder / CEO",
         "image": "christos.jpg",
         "website": "https://www.christosmakridis.com/",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/christosmakridis/"
-            }
-        ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/christosmakridis/",
+        "text": "Christos A. Makridis also holds academic appointments at the Digital Economy Lab at Stanford University, the Chazen Institute at Columbia Business School, Institute for the Future at University of Nicosia, the Global Security Initiative and W. P. Carey School of Business at Arizona State University, Institute for Studies of Religion, as well serving as an adjunct fellow at the Manhattan Institute and senior adviser at Gallup. Christos previously served on the White House Council of Economic Advisers managing the cybersecurity, technology, and space activities, as a Non-resident Fellow at the Cyber Security Project in the Harvard Kennedy School of Government, as a Digital Fellow at the Initiative at the Digital Economy in the MIT Sloan School of Management. Christos' primary academic research focuses on labor economics, the digital economy, and personal finance and well-being, and has published over 70 peer-reviewed research articles and 170 news articles. He serves on the board of advisers for Meta Impact Capital and Zenger News. Christos earned dual Masters and PhDs in Economics and Management Science & Engineering at Stanford University."
     },
     {
         "id": 2,
         "name": "John Nguyen",
         "role": "CTO",
         "image": "john.jpg",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/john-0235a012/"
-            }
-        ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/john-0235a012/",
+        "text": "John Nguyen has held senior data scientist roles at Deloitte and Kraft-Heinz, managing teams and building state-of-the-art predictive analytics models. John also is an associate faculty at Columbia University and serves as an adviser to many startups. John holds a Bachelor's in Economics and Mathematics and a PhD (ABD) in Machine Learning from University of Illinois Urbana-Champaign."
     },
     {
         "id": 3,
         "name": "Justin Whear",
         "role": "VP Engineering",
         "image": "justinwhear.jpg",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/justin-whear/"
-            }
-        ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/justin-whear/",
+        "text": "Justin Whear has over twenty years of software development experience added to strong business leadership acumen. Justin formerly served as the chief data executive at Emsi, the leading labor market intelligence firm, and serves as the Principal Software Engineer and Engineering Director at New Founding. In addition to building and scaling teams, Mr. Whear is a hands-on expert in working with both structured and unstructured data, NLP extraction and classification, and high performance machine learning. Justin earned a Bachelor's from New St. Andrews College."
     },
     {
         "id": 4,
         "name": "Rob Sentz",
         "role": "Marketing",
         "image": "robsentz.jpg",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/robsentz/"
-            }
-        ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/robsentz/",
+        "text": "Rob Sentz has spent 16 years as a marketing executive and a consultant. He has extensive experience in content creation, building and leading marketing teams, running research projects, leading events, and developing data products. He was instrumental in building the brand, message, communication, and creative strategies to help a labor market analytics company scale and grow. Rob helps educators and technology companies tell their stories in better, more creative, and more compelling ways."
     },
     {
         "id": 5,
@@ -62,41 +38,23 @@
         "role": "Senior Software Developer",
         "image": "gregdickison.jpeg",
         "website": "https://bluecanoe.dev/",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/greg-dickison/"
-            }
-        ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/greg-dickison/",
+        "text": "Greg Dickison is a web developer with a mission to bless end-users by building web applications that deliver true personal, economic, and cultural value. After serving as General Counsel at Emsi (now Lightcast), he launched Blue Canoe Web Development. He lives in the little college town of Moscow, Idaho, with his wife, four boys, and a growing horde of grandkids."
     },
     {
         "id": 6,
         "name": "Mark Calabria",
-        "role": "Senior Adviser",
+        "role": "Strategic Adviser",
         "image": "mark.png",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/mark-calabria-94620b2/"
-            }
-          ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/mark-calabria-94620b2/",
+        "text": "Mark Calabria is a senior adviser at the Cato Institute. He formerly served as the Director of the Federal Housing Finance Agency and as the Chief Economist for Vice President Mike Pence. Previously, Mark served as a senior aide to the U.S. Senate Committee on Banking, Housing, and Urban Affairs under chairs Richard Shelby and Phil Gramm. During his Senate service, he acted as the primary drafter of the Housing and Economic Recovery Act of 2008, which established a stronger regulatory framework for the government‐​sponsored housing enterprises. He also led the banking committee's response to Hurricane Katrina, as well as its work on the Shelby‐​Dodd Flood Insurance Reform and Modernization Act of 2008, which served as the basis for the Biggert‐​Waters Flood Insurance Reform Act of 2012. Prior to his Senate service, Calabria served as the deputy assistant secretary for regulatory affairs in the Office of Housing at the U.S. Department of Housing and Urban Development. Calabria has also held positions with Harvard University's Joint Center for Housing Studies, the National Association of Realtors, and the National Association of Home Builders. He holds a doctorate in economics from George Mason University."
     },
     {
         "id": 7,
         "name": "Paul Watkins",
-        "role": "Senior Adviser",
+        "role": "Strategic Adviser",
         "image": "paul.png",
-        "social": [
-            {
-                "id": 3,
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/paul-watkins-46695b6/"
-            }
-          ],
-        "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "social": "https://www.linkedin.com/in/paul-watkins-46695b6/",
+        "text": "Paul Watkins leads the Fusion Law Firm. He formerly served as a Senior Adviser at Patomak Global Partners and the Chief Innovation Officer at the Consumer Financial Protection Bureau (CFP). He designed the Bureau's policies on no-action letters, trial disclosures, and compliance sandbox tests. He signed Bureau letters issued under those policies on topics ranging from mortgages to small-dollar loans, and co-authored Bureau statements on alternative data, and artificial intelligence. Paul previously led the Civil Litigation Division of the Arizona Attorney General's Office where he managed the state's enforcement of consumer protection, data privacy, antitrust, and civil rights laws, and he designed legislation establishing Arizona's Fintech Sandbox, which became the model for other state-based fintech sandboxes, and drafted one of the first U.S. laws defining utility tokens. Paul earned his undergraduate degree from Hillsdale College and his J.D. from Harvard Law School."
     }
 ]
