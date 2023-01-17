@@ -2,7 +2,7 @@ export default function Footer () {
   return (
     <section className="py-10 bg-gray-100 sm:pt-16 lg:pt-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-            <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+            <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-8 md:gap-y-16 gap-x-12">
                 <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                     <img className="w-auto h-9" src="/images/dainamic_new_logo_dark.png" alt="" />
 
@@ -11,7 +11,7 @@ export default function Footer () {
                 <div></div>
                 <div></div>
                 <div></div>
-                <div>
+                <div className="col-span-2 md:col-span-1">
                     <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">Contact Us</p>
 
                     <ul className="mt-6 space-y-4">

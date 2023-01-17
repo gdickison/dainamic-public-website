@@ -22,7 +22,7 @@ export default function BlogFeatureCard ({id, image, title, categories, author, 
       </div>
       <div className="border-t border-gray-200">
         <div className="flex">
-          <div className="flex items-center flex-1 px-6 py-5">
+          <div className="flex items-center flex-1 px-4 py-5">
             <span className="flex-1 block min-w-0 ml-3 text-base font-semibold text-gray-900 truncate"> {author} </span>
           </div>
           <a href={`post/${id}`} title="" className="inline-flex items-center flex-shrink-0 px-4 py-5 text-base font-semibold transition-all duration-200 bg-white border-l border-gray-200 hover:bg-blue-600 hover:text-white">
