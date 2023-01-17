@@ -20,17 +20,27 @@ export default function BlogStandard () {
             </h1>
             <p className="text-gray-700">
               <span className="byline author vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
-                <a href="#" target="_blank" itemprop="url" rel="author noopener noreferrer" className="text-primary hover:text-primary-dark">
-                  <span itemprop="name">
+                <a href="mailto:hello@dainamic.ai" target="_blank" itemprop="url" rel="author noopener noreferrer" className="text-primary hover:text-primary-dark">
+                <span itemprop="name">
                   {post.author}
-                  </span>
+                </span>
                 </a>
               </span>
             </p>
+            <p className="text-gray-700 italic">
+              <span className="byline author vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+                <span itemprop="name">
+                  {post.role}
+                </span>
+              </span>
+            </p>
           </div>
-          <div className="mx-auto prose">
-            <div dangerouslySetInnerHTML={{__html:post.text}} className="space-y-2"></div>
+          <div className="mx-auto prose text-lg">
+            <div dangerouslySetInnerHTML={{__html:post.text}} className="space-y-3"></div>
           </div>
+          <p className="my-6 italic">
+            {post.bio}
+          </p>
         </article>
       }
     </>
