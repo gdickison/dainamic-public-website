@@ -4,7 +4,10 @@ import Alert from "../components/Alert";
 import emailjs from "@emailjs/browser";
 
 export default function Contact () {
-  const [inputs, setInputs] = useState({});
+  const [name, setName] = useState('')
+  const [bank, setBank] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const [showAlert, setShowAlert] = useState(false)
   const [alertHeading, setAlertHeading] = useState()
   const [alertText, setAlertText] = useState()
@@ -15,27 +18,31 @@ export default function Contact () {
   }
   const form = useRef()
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setInputs({ ...inputs, [name]: value });
-  };
-
   function closeAlert () {
     setShowAlert(false)
     redirect()
+  }
+
+  function resetForm () {
+    setName('')
+    setBank('')
+    setEmail('')
+    setMessage('')
   }
 
   function sendEmail(e){
     e.preventDefault()
     emailjs.sendForm('service_tc217hb', 'template_jswou4i', form.current, '46Kg8aVWAXahEBd-A')
       .then(result => {
-        setShowAlert(true)
         setAlertHeading('Thanks for your email!')
         setAlertText('Thank you for your interest in Dainamic AI. We are eager to see how we an help. We will get back to you by the end of the next business day.')
-      }, error => {
         setShowAlert(true)
+        resetForm()
+      }, error => {
         setAlertHeading('Oops! Something went wrong.')
         setAlertText('Sorry! We will track down the problem and get things up and running again soon. Please try again later, or send an email directly to hello@dainamic.ai.')
+        setShowAlert(true)
+        resetForm()
       })
   }
 
@@ -71,8 +78,8 @@ export default function Contact () {
                           required="required"
                           placeholder="Your Name"
                           data-error="Your Name is Required"
-                          value={inputs.name}
-                          onChange={handleInputChange}
+                          value={name}
+                          onChange={e => setName(e.target.value)}
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
                         />
                       </div>
@@ -88,8 +95,8 @@ export default function Contact () {
                           required="required"
                           placeholder="Your Bank Name"
                           data-error="Bank Name is Required"
-                          value={inputs.bank}
-                          onChange={handleInputChange}
+                          value={bank}
+                          onChange={e => setBank(e.target.value)}
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
                         />
                       </div>
@@ -105,8 +112,8 @@ export default function Contact () {
                           placeholder="Your Email"
                           required="required"
                           data-error="Please Enter Valid Email"
-                          value={inputs.email}
-                          onChange={handleInputChange}
+                          value={email}
+                          onChange={e => setEmail(e.target.value)}
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
                         />
                       </div>
@@ -121,8 +128,8 @@ export default function Contact () {
                           placeholder="Your Message"
                           required
                           data-error="Please, Leave us a message"
-                          value={inputs.message}
-                          onChange={handleInputChange}
+                          value={message}
+                          onChange={e => setMessage(e.target.value)}
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
                           rows="4"
                         ></textarea>
