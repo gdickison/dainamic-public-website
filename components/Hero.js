@@ -3,13 +3,15 @@ import Button from "./Button"
 
 export default function Hero () {
   return (
-    <div className="h-[60vh] md:h-[80vh] max-h-[770px] bg-white relative">
+    <div className="h-[60vh] md:h-[70vh] max-h-[770px] bg-white relative">
       <section className="py-10 sm:py-16 lg:py-24 h-full flex items-center">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center justify-center grid-cols-1 gap-12">
             <div>
-              <h1 className="mt-4 text-5xl font-light text-black lg:mt-8 sm:text-6xl xl:text-8xl uppercase">Economic Intelligence</h1>
-              <p className="my-4 text-xl text-black lg:mt-8 sm:text-3xl">For Small and Mid-Size Banks</p>
+              <div className="mt-4 text-5xl font-light text-black lg:mt-8 md:text-6xl xl:text-7xl uppercase">
+                <p>Economic Intelligence</p>
+                <p>For Small and Mid-Size Banks</p>
+              </div>
               <Button
                 target={"mailto:hello@dainamic.ai"}
                 text={"Get In Touch"}
