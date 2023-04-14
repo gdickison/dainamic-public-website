@@ -16,10 +16,10 @@ export default function Home() {
       <main className="">
         <Hero/>
         <TextContent
-          text1={"Dainamic is a small team that provides high quality economic data and customized analytics to help smaller financial institutions deal with an increasingly complex world. Our services will help you make better decisions and better manage a growing list of regulations."}
+          text1={"Dainamic uses economic data and customized analytics to SMBs deal with an increasingly complex world."}
         />
         <BlogFeaturedArticles
-          numArticles={1}
+          numArticles={3}
         />
         <Steps/>
         <TextContent

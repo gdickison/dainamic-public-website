@@ -10,7 +10,7 @@ export default function Steps () {
                 <li className="relative flex items-center">
                     <div className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
                     <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                        <i className="icofont-brainstorming icofont-4x text-red-600"></i>
+                        <i className="icofont-brainstorming icofont-4x text-[#0037ff]"></i>
                     </div>
                     <div className="ml-6">
                         <h3 className="text-lg font-semibold text-black">Economic Intelligence</h3>
@@ -21,7 +21,7 @@ export default function Steps () {
                     <div className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
 
                     <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                      <i className="icofont-chart-growth icofont-4x text-red-600"></i>
+                      <i className="icofont-chart-growth icofont-4x text-[#0037ff]"></i>
                     </div>
                     <div className="ml-6">
                         <h3 className="text-lg font-semibold text-black">Credible Predictions</h3>
@@ -30,7 +30,7 @@ export default function Steps () {
                 </li>
                 <li className="relative flex items-center">
                     <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow">
-                      <i className="icofont-chart-bar-graph icofont-4x text-red-600"></i>
+                      <i className="icofont-chart-bar-graph icofont-4x text-[#0037ff]"></i>
                     </div>
                     <div className="ml-6">
                         <h3 className="text-lg font-semibold text-black">Data Visualizations</h3>

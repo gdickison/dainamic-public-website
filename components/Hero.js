@@ -8,7 +8,7 @@ export default function Hero () {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center justify-center grid-cols-1 gap-12">
             <div>
-              <div className="mt-4 text-5xl font-light text-black lg:mt-8 md:text-6xl xl:text-7xl uppercase">
+              <div className="mt-4 text-5xl font-light text-black lg:mt-8 md:text-6xl">
                 <p>Economic Intelligence</p>
                 <p>For Small and Mid-Size Banks</p>
               </div>

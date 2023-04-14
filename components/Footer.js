@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Footer () {
   return (
     <section className="py-10 bg-gray-100 sm:pt-16 lg:pt-24">
@@ -16,12 +17,12 @@ export default function Footer () {
 
                     <ul className="mt-6 space-y-4">
                         <li className="flex items-center gap-2">
-                            <i className="icofont-email icofont-2x text-red-500"></i>
+                            <i className="icofont-email icofont-2x text-[#0037ff]"></i>
                             <a href="mailTo:hello@dainamic.ai" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> hello@dainamic.ai </a>
                         </li>
 
                         <li className="flex items-center gap-2">
-                            <i className="icofont-globe icofont-2x text-red-500"></i>
+                            <i className="icofont-globe icofont-2x text-[#0037ff]"></i>
                             <a href="https://dainamic.ai" target="_blank" rel="noreferrer" title="" className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> dainamic.ai </a>
                         </li>
                     </ul>
