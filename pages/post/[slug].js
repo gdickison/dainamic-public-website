@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import blogData from "../../public/data/blog-data.json";
 
 export default function BlogStandard () {
@@ -20,11 +21,12 @@ export default function BlogStandard () {
             </h1>
             <p className="text-gray-700">
               <span className="byline author vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
-                <a href="mailto:hello@dainamic.ai" target="_blank" itemprop="url" rel="author noopener noreferrer" className="text-primary hover:text-primary-dark">
+                {/* <a href="mailto:hello@dainamic.ai" target="_blank" itemprop="url" rel="author noopener noreferrer" className="text-primary hover:text-primary-dark"> */}
+                <Link href="/about" itemprop="url" className="text-primary hover:text-primary-dark">
                 <span itemprop="name">
                   {post.author}
                 </span>
-                </a>
+                </Link>
               </span>
             </p>
             <p className="text-gray-700 italic">
