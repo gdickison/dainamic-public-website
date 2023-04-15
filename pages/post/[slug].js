@@ -14,7 +14,7 @@ export default function BlogStandard () {
       {post &&
         <article className="px-4 py-24 mx-auto max-w-7xl" itemid="#" itemScope itemType="http://schema.org/BlogPosting">
           <section className="text-gray-600 body-font bg-[url('/images/bg_abstract_white.jpg')] bg-cover">
-            <div className="container mx-auto flex px-5 pt-12 pb-5 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex px-5 pt-12 md:flex-row flex-col items-center">
               <div className="w-full lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <p className="mb-3 text-xs font-semibold tracking-wider text-gray-500 uppercase">
                   {post.categories}
@@ -38,7 +38,7 @@ export default function BlogStandard () {
                 </p>
               </div>
               <div className="w-full">
-                <img className="object-cover object-center rounded" alt={post.author} src={`/images/${post.authorImage}`}/>
+                <img className="object-cover object-center rounded bg-transparent" alt={post.author} src={`/images/${post.authorImage}`}/>
               </div>
             </div>
           </section>
