@@ -1,6 +1,7 @@
 [
   {
     "id": "a_better_way_to_address_cecl",
+    "hidden": false,
     "image": "pexels-support.jpg",
     "title": "A Better Way to Address CECL",
     "categories": "CECL / Modeling",
@@ -14,6 +15,7 @@
   },
   {
     "id": "cecl_regulatory_compliance_made_easy",
+    "hidden": true,
     "image": "pexels-success.jpg",
     "title": "CECL Regulatory Compliance Made Easy",
     "categories": "CECL",
@@ -28,6 +30,7 @@
   },
   {
     "id": "modeling_capital_reserves_under_cecl",
+    "hidden": true,
     "image": "pexels-financial-model.jpg",
     "title": "Modeling capital reserves under CECL",
     "categories": "CECL",
@@ -41,6 +44,7 @@
   },
   {
     "id": "strengthening_loss_forecasting_in_banking",
+    "hidden": true,
     "image": "pexels-weightlifting.jpg",
     "title": "Strengthening Loss Forecasting in Banking",
     "categories": "CECL",

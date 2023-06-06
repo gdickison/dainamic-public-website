@@ -19,7 +19,7 @@ export default function Home() {
           text1={"Dainamic uses economic data and customized analytics to SMBs deal with an increasingly complex world."}
         />
         <BlogFeaturedArticles
-          numArticles={3}
+          numArticles={1}
         />
         <Steps/>
         <TextContent
