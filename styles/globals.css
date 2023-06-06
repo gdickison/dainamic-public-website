@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+.blog-list {
+  padding-inline: 2rem;
+}
+
+.blog-list > li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
