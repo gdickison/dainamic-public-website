@@ -114,3 +114,22 @@ a {
   list-style-type: disc;
   list-style-position: inside;
 }
+
+.blog-post a,
+.blog-bio a {
+  text-decoration: underline;
+}
+
+.blog-post a:hover,
+.blog-bio a:hover {
+  color: blue;
+}
+
+.blog-post blockquote {
+  padding-left: 2rem;
+  font-style: italic;
+}
+
+.blog-post ol {
+  padding-left: 2rem;
+}

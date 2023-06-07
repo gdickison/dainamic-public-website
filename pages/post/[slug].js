@@ -45,10 +45,10 @@ export default function BlogStandard () {
           <div className="w-full mx-auto mb-12 text-center md:w-2/3">
           </div>
           <div className="mx-auto prose text-lg">
-            <div dangerouslySetInnerHTML={{__html:post.text}} className="space-y-3"></div>
+            <div dangerouslySetInnerHTML={{__html:post.text}} className="blog-post space-y-3"></div>
           </div>
           <p className="my-6 italic">
-            {post.bio}
+            <div dangerouslySetInnerHTML={{__html:post.bio}} className="blog-bio"></div>
           </p>
         </article>
       }
