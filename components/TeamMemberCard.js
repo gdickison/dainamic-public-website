@@ -19,7 +19,7 @@ export default function TeamMemberCard ({name, role, image, website, social, tex
             src={`images/${image}`}
             onClick={() => handleClick()}
           />
-          <span className="bg-gray-300 rounded-md mx-24 py-2 invisible group-hover:visible absolute top-10 left-0 right-0 text-black">See Full Bio</span>
+          <span className="bg-gray-300 rounded-md py-2 invisible group-hover:visible absolute right-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black min-w-[160px]">See Full Bio</span>
         </div>
         <div className="w-full">
           <h2 className="title-font font-medium text-lg text-gray-900">
