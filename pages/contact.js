@@ -32,10 +32,15 @@ export default function Contact () {
 
   function sendEmail(e){
     e.preventDefault()
-    emailjs.sendForm('service_tc217hb', 'template_jswou4i', form.current, '46Kg8aVWAXahEBd-A')
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_CONTACT_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID,
+      form.current,
+      NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    )
       .then(result => {
         setAlertHeading('Thanks for your email!')
-        setAlertText('Thank you for your interest in Dainamic AI. We are eager to see how we an help. We will get back to you by the end of the next business day.')
+        setAlertText('Thank you for your interest in Dainamic AI. We are eager to see how we can help. We will get back to you by the end of the next business day.')
         setShowAlert(true)
         resetForm()
       }, error => {
