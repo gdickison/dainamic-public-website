@@ -61,7 +61,7 @@ export default function ContactCapture () {
     <div className="relative bg-white">
       <div className="lg:absolute lg:inset-0 lg:left-1/2">
         <img
-          className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
+          className="hidden lg:block h-64 w-full xl:w-3/4 2xl:w-2/3 bg-gray-50 object-center sm:h-80 lg:absolute lg:h-full"
           src="/images/dainamic-whitepaper-cover.jpg"
           alt=""
         />
