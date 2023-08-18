@@ -1,4 +1,4 @@
-export default function Whitepaper () {
+export default function WhitepaperDownload () {
 
   return (
     <div className="relative h-screen">
