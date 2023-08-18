@@ -59,7 +59,7 @@ export default function ContactCapture () {
 
   return (
     <div className="flex flex-col lg:flex-row-reverse bg-white mt-20">
-      <div className="m-4 p-4 lg:w-1/2">
+      <div className="m-4 p-4 lg:w-1/2 lg:mx-auto">
         <img
           className="w-full bg-gray-50 border-2 object-center"
           src="/images/dainamic-whitepaper-cover.jpg"
