@@ -58,18 +58,18 @@ export default function ContactCapture () {
   }
 
   return (
-    <div className="relative bg-white">
-      <div className="lg:absolute lg:inset-0 lg:left-1/2">
+    <div className="flex flex-col lg:flex-row-reverse bg-white mt-20">
+      <div className="m-4 p-4 lg:w-1/2">
         <img
-          className="hidden lg:block h-64 w-full xl:w-3/4 2xl:w-2/3 bg-gray-50 object-center sm:h-80 lg:absolute lg:h-full"
+          className="w-full bg-gray-50 border-2 object-center"
           src="/images/dainamic-whitepaper-cover.jpg"
           alt=""
         />
       </div>
-      <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
+      <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto">
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Download the whitepaper</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Download the newest whitepaper</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
             Learn how the increase in STEM workers has an especially pronounced effect in finance, and why the future requires digital transformation for small and mid sized banks to be competitive and comply with a growing regulatory burden.
             </p>
@@ -188,12 +188,12 @@ export default function ContactCapture () {
                   </div>
                 </div>
               </div>
-              <div className="mt-10 flex justify-end border-t border-gray-900/10 pt-8">
+              <div className="mt-10 flex justify-center border-t border-gray-900/10 pt-8">
                 <button
                   type="submit"
                   className="rounded-md bg-blue-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
                 >
-                  Send message
+                  Get the Whitepaper
                 </button>
               </div>
             </form>
