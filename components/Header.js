@@ -25,7 +25,7 @@ export default function Header () {
             <Link href="/" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Home </Link>
             <Link href="/about" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> About </Link>
             <Link href="/blog" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Blog </Link>
-            <Link href="/whitepapers" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Research </Link>
+            <Link href="/research" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Research </Link>
             <Link href="/contact" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80"> Contact Us </Link>
           </div>
         </div>

@@ -2,13 +2,14 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
-export default function ContactCapture () {
+export default function ContactCapture ({paper}) {
   const [firstName, setFirstName] = useState(null)
   const [lastName, setLastName] = useState(null)
   const [email, setEmail] = useState(null)
   const [company, setCompany] = useState(null)
   const [phone, setPhone] = useState(null)
   const [message, setMessage] = useState(null)
+  // const [paperId, setPaperId] = useState(paper.paperSlug)
   const [showSuccess, setShowSuccess] = useState(false)
   const [showError, setShowError] = useState(false)
 
@@ -23,7 +24,8 @@ export default function ContactCapture () {
       email,
       company,
       phone,
-      message
+      message,
+      paperId: paper.paperSlug
     }
 
     emailjs.send(
@@ -59,20 +61,26 @@ export default function ContactCapture () {
 
   return (
     <div className="flex flex-col lg:flex-row-reverse bg-white mt-20">
-      <div className="m-4 p-4 lg:w-1/2 lg:mx-auto">
-        <img
-          className="w-full bg-gray-50 border-2 object-center"
-          src="/images/dainamic-whitepaper-cover.jpg"
-          alt=""
-        />
-      </div>
+      {paper &&
+        <div className="m-4 p-4 lg:w-1/2 lg:mx-auto">
+          <img
+            className="w-full bg-gray-50 border-2 object-center"
+            src={paper.imageUrl}
+            alt={paper.title}
+          />
+        </div>
+      }
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto">
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Download the newest whitepaper</h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how the increase in STEM workers has an especially pronounced effect in finance, and why the future requires digital transformation for small and mid sized banks to be competitive and comply with a growing regulatory burden.
-            </p>
+            {paper &&
+              <>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Download &quot;{paper.title}&quot;</h2>
+                <p className="mt-2 text-lg leading-8 text-gray-600">
+                  {paper.description}
+                </p>
+              </>
+            }
             <form
               ref={form}
               action="#"

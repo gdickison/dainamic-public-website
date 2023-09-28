@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Navigating the Digital Frontier",
+    "author": "Christos Makridis",
+    "role": "Founder / CEO",
+    "imageUrl": "/images/navigating-the-digital-frontier-cover.jpg",
+    "description": "Learn how the increase in STEM workers has an especially pronounced effect in finance, and why the future requires digital transformation for small and mid sized banks to be competitive and comply with a growing regulatory burden.",
+    "paperSlug": "navigating-the-digital-frontier"
+  },
+  {
+    "title": "The Ultimate Guide to CECL",
+    "author": "Christos Makridis",
+    "role": "Founder / CEO",
+    "imageUrl": "/images/cecl_playbook.jpg",
+    "description": "See our action steps for CECL compliance. The Financial Accounting Standards Board requires financial institutions to implement CECL for estimating credit losses. We explain how to implement CECL using a comprehensive and detailed audit trail.",
+    "paperSlug": "the-ultimate-guide-to-cecl"
+  }
+]
