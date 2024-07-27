@@ -1,54 +1,52 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
-import Alert from "../components/Alert";
-import emailjs from "@emailjs/browser";
+import { Success, Error } from "../components/ContactCapture";
 
 export default function Contact () {
   const [name, setName] = useState('')
   const [bank, setBank] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [showAlert, setShowAlert] = useState(false)
-  const [alertHeading, setAlertHeading] = useState()
-  const [alertText, setAlertText] = useState()
+  const [showSuccess, setShowSuccess] = useState(false)
+  const [showError, setShowError] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const router = useRouter()
-  function redirect () {
+
+  async function sendEmail(e){
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const contactParams = {
+      name,
+      bank,
+      email,
+      message
+    }
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        contactParams
+      })
+    })
+
+    response.status === 200 ? setShowSuccess(true) : setShowError(true)
+  }
+
+  function handleSuccessClick () {
+    setShowSuccess(false)
+    document.getElementById("contact-form").reset()
     router.push('/')
   }
-  const form = useRef()
 
-  function closeAlert () {
-    setShowAlert(false)
-    redirect()
-  }
-
-  function resetForm () {
-    setName('')
-    setBank('')
-    setEmail('')
-    setMessage('')
-  }
-
-  function sendEmail(e){
-    e.preventDefault()
-    emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_CONTACT_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID,
-      form.current,
-      NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    )
-      .then(result => {
-        setAlertHeading('Thanks for your email!')
-        setAlertText('Thank you for your interest in Dainamic AI. We are eager to see how we can help. We will get back to you by the end of the next business day.')
-        setShowAlert(true)
-        resetForm()
-      }, error => {
-        setAlertHeading('Oops! Something went wrong.')
-        setAlertText('Sorry! We will track down the problem and get things up and running again soon. Please try again later, or send an email directly to hello@dainamic.ai.')
-        setShowAlert(true)
-        resetForm()
-      })
+  function handleErrorClick () {
+    setShowError(false)
+    document.getElementById("contact-form").reset()
+    router.push('/')
   }
 
   return (
@@ -68,7 +66,7 @@ export default function Contact () {
                   className="mt-4"
                   name="contact-form"
                   id="contact-form"
-                  ref={form}
+                  // ref={form}
                   onSubmit={sendEmail}
                   method="POST"
                 >
@@ -142,7 +140,7 @@ export default function Contact () {
                     </div>
 
                     <div>
-                      <button type="submit" name="submit" className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
+                      <button type="submit" name="submit" className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700" disabled={isSubmitting}>
                         Send
                       </button>
                     </div>
@@ -153,11 +151,14 @@ export default function Contact () {
           </div>
         </div>
       </div>
-      {showAlert &&
-        <Alert
-          alertHeading={alertHeading}
-          alertText={alertText}
-          closeAlert={closeAlert}
+      {showSuccess &&
+        <Success
+          clickHandler={handleSuccessClick}
+        />
+      }
+      {showError &&
+        <Error
+          clickHandler={handleErrorClick}
         />
       }
     </section>
