@@ -1,23 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState, useRef } from 'react'
-import emailjs from '@emailjs/browser'
+import { useRouter } from 'next/router'
 
 export default function ContactCapture ({paper}) {
+  const router = useRouter()
   const [firstName, setFirstName] = useState(null)
   const [lastName, setLastName] = useState(null)
   const [email, setEmail] = useState(null)
   const [company, setCompany] = useState(null)
   const [phone, setPhone] = useState(null)
   const [message, setMessage] = useState(null)
-  // const [paperId, setPaperId] = useState(paper.paperSlug)
   const [showSuccess, setShowSuccess] = useState(false)
   const [showError, setShowError] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const form = useRef()
 
-  function handleSubmit(e){
+  async function handleSubmit(e){
     e.preventDefault();
-
+    setIsSubmitting(true)
     const templateParams = {
       firstName,
       lastName,
@@ -28,35 +29,29 @@ export default function ContactCapture ({paper}) {
       paperId: paper.paperSlug
     }
 
-    emailjs.send(
-      process.env.NEXT_PUBLIC_EMAILJS_DAINAMIC_WHITEPAPER_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_DAINAMIC_WHITEPAPER_TEMPLATE_ID,
-      templateParams,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    )
-      .then((result) => {
-          if(result.status === 200){
-            setFirstName('')
-            setLastName('')
-            setEmail('')
-            setCompany('')
-            setPhone('')
-            setMessage('')
-            form.current.reset()
-            setShowSuccess(true)
-          }
-      }, (error) => {
-          console.log(error);
-          setShowError(true)
-      });
+    const response = await fetch('/api/request-white-paper', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        templateParams
+      })
+    })
+
+    response.status === 200 ? setShowSuccess(true) : setShowError(true)
   }
 
   function handleSuccessClick () {
     setShowSuccess(false)
+    document.getElementById("whitepaper-form").reset()
+    router.push('/')
   }
 
   function handleErrorClick () {
     setShowError(false)
+    document.getElementById("whitepaper-form").reset()
+    router.push('/')
   }
 
   return (
@@ -203,6 +198,7 @@ export default function ContactCapture ({paper}) {
                 <button
                   type="submit"
                   className="rounded-md bg-blue-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                  disabled={isSubmitting}
                 >
                   Get the Whitepaper
                 </button>
